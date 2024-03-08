@@ -75,6 +75,7 @@
       },
       {
         "nombre":"Receta de Mayonesa de Zanahoria 🥕",
+        "imagen":"./img/mayoZanahoriaImg.png",
         "ingredientes":[
             "½ kilogramo de zanahorias",
             "½ limón (el jugo)",

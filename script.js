@@ -27,7 +27,7 @@ function mostrarRecetas(recetas) {
     const enlaceReceta = document.createElement('a');
     enlaceReceta.classList.add('receta-link');
     enlaceReceta.href = 'receta.html?nombre=' + encodeURIComponent(receta.nombre);
-    enlaceReceta.innerHTML = '<div class="receta"><h2>' + receta.nombre + '</h2></div>';
+    enlaceReceta.innerHTML = '<div class="receta"><img src="' + receta.imagen + '"><h2>' + receta.nombre + '</h2></div>';
     recetasContainer.appendChild(enlaceReceta);
   });
 
