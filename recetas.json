@@ -1,0 +1,105 @@
+{
+    "recetas": [
+      {
+        "nombre": "Torta de Chocolate",
+        "ingredientes": [
+          "200g de chocolate",
+          "150g de mantequilla",
+          "200g de azúcar",
+          "4 huevos",
+          "150g de harina"
+        ],
+        "pasos": [
+          {
+            "numero": 1,
+            "descripcion": "Precalienta el horno a 180°C."
+          },
+          {
+            "numero": 2,
+            "descripcion": "Derrite el chocolate y la mantequilla juntos."
+          },
+          {
+            "numero": 3,
+            "descripcion": "Añade el azúcar y mezcla bien."
+          },
+          {
+            "numero": 4,
+            "descripcion": "Incorpora los huevos uno por uno."
+          },
+          {
+            "numero": 5,
+            "descripcion": "Tamiza la harina y agrégala a la mezcla."
+          },
+          {
+            "numero": 6,
+            "descripcion": "Vierte la mezcla en un molde y hornea por 30 minutos."
+          }
+        ],
+        "imagenes": [
+          "paso2.jpg",
+          "paso4.jpg",
+          "paso6.jpg"
+        ]
+      },
+      {
+        "nombre": "Ensalada de Frutas",
+        "ingredientes": [
+          "Manzanas",
+          "Plátanos",
+          "Uvas",
+          "Kiwi",
+          "Miel"
+        ],
+        "pasos": [
+          {
+            "numero": 1,
+            "descripcion": "Lava y pela las frutas."
+          },
+          {
+            "numero": 2,
+            "descripcion": "Corta las frutas en trozos."
+          },
+          {
+            "numero": 3,
+            "descripcion": "Mezcla todas las frutas en un tazón."
+          },
+          {
+            "numero": 4,
+            "descripcion": "Añade miel al gusto y mezcla bien."
+          }
+        ],
+        "imagenes": [
+          "paso2_ensalada.jpg",
+          "paso4_ensalada.jpg"
+        ]
+      },
+      {
+        "nombre":"Receta de Mayonesa de Zanahoria 🥕",
+        "ingredientes":[
+            "½ kilogramo de zanahorias",
+            "½ limón (el jugo)",
+            "1 diente de ajo picado",
+            "Aceite de oliva o girasol",
+            "1 pizca de sal"
+        ],
+        "pasos": [
+            {
+              "numero": 1,
+              "descripcion": "Pela las zanahorias, trocéalas y cocínalas en una olla con agua hirviendo. Cuando estén tiernas, escúrrelas y deja que se enfríen para seguir con la receta de mayonesa de zanahoria vegana. Truco: También puedes cocinar las zanahorias al vapor.",
+              "imagen": "./img/sarten.png"
+            },
+            {
+              "numero": 2,
+              "descripcion": "Una vez frías, tritura las zanahorias con el diente de ajo pelado, el jugo del limón y la sal. Después, añade aceite en forma de hilo sin dejar de batir hasta alcanzar la textura de una mayonesa. Con unas tres o cuatro cucharadas soperas será suficiente, pero también depende del gusto de cada uno.",
+              "imagen":"./img/licuadora.png"
+            },
+            {
+              "numero": 3,
+              "descripcion": "¡Y listo! Sirve la preparación con crudités, con carne vegetal, con verduras al horno, patatas..., ¡lo que quieras! Ahora que sabes cómo hacer mayonesa de zanahoria vegana, atrévete a prepararla y dinos qué te ha parecido el resultado.",
+              "imagen": "./img/mayoZanahoriaImg.png"
+            }
+          ]
+      }
+    ]
+  }
+  

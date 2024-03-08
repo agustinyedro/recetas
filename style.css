@@ -94,6 +94,18 @@ p{
     padding-right: 5px;
     line-height: 0;
 }
+.receta{
+    width: 80%;
+    height: 50px;
+    border: 1px solid var(--black-olive);
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
 
 
 
