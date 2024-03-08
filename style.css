@@ -5,7 +5,7 @@
     --tifany-blue: #94D1BE;
 }
 
-
+/*font-family: 'ThunderMed';*/
 *{
     margin: 0;
     padding: 0;
@@ -14,23 +14,47 @@
 body{
     height: 100vh;
     background-color: rgb(var(--primary-color));
-    font-family: "Sora", sans-serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     
 }
+
+/* BARRADE MENU */
+#nav-redes-sociales{
+    height: 40px;
+    background-color: #ffded6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    padding: 0 20px;
+    gap:20px;
+}
+
+#nav-redes-sociales a{
+    color:#2a2b2a ;
+}
+#nav-redes-sociales a:hover{
+    color:#2a2b2a80 ;
+}
 #nav-bar{
-    background-color: var(--black-olive);
     padding: 20px;
     display: flex;
     justify-content: center;
     gap: 50px;
-
 }
 #nav-bar a{
     text-decoration: none;
-    color: var(--primary-color);
+    color: #2a2b2a;
     font-weight: bold;
     font-size: 20px;
 }
+.header hr{
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*   Cuerpo de la pagina  */
 #title{
     padding:20px;
     font-size: 50px;
@@ -65,17 +89,7 @@ p{
     width: 100%;
 }
 
-/* Espacio para realizar la tabla*
 
----
--
--
--
--
-
--
-/
-*/
 .preparacion h2{
     text-align: start;
     padding: 5px 20px;
@@ -96,9 +110,9 @@ p{
 }
 #recetas-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
-    padding: 20px 5%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    padding: 20px 5px;
 }
 .receta-link{
     text-decoration: none;
@@ -106,32 +120,32 @@ p{
 }
 .receta{
     width: 80%;
-    height: 280px;
-    border: 1px solid var(--black-olive);
-    border-radius: 20px;
+    height: 500px;
+    border: 1px solid #2a2b2a;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
-    box-shadow: 0 0 25px var(--black-olive);
-    transition: ease-in-out 0.5s;
+    margin-left:20px;    margin-bottom: 10px;
+    z-index: 3;
 }
 .receta img{
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 20px 20px 0 0;
     margin-bottom: 10px;
+    transition: ease-in-out 0.5s;
+    overflow: hidden;
+    z-index:-1;
 }
 .receta h2{
     text-align: center;
     font-size: 20px;
     margin-bottom: 10px;
 }
-.receta:hover{
+.receta img:hover{
     scale: 1.1;
-   
 }
+
 #footer{
     background-color: var(--black-olive); 
     color: var(--primary-color); 
