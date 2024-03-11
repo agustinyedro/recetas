@@ -100,6 +100,62 @@
               "imagen": "./img/mayoZanahoriaImg.png"
             }
           ]
+      },
+      {
+        "nombre":"Receta de Mayonesa de Zanahoria 🥕",
+        "imagen":"./img/mayoZanahoriaImg.png",
+        "ingredientes":[
+            "½ kilogramo de zanahorias",
+            "½ limón (el jugo)",
+            "1 diente de ajo picado",
+            "Aceite de oliva o girasol",
+            "1 pizca de sal"
+        ],
+        "pasos": [
+            {
+              "numero": 1,
+              "descripcion": "Pela las zanahorias, trocéalas y cocínalas en una olla con agua hirviendo. Cuando estén tiernas, escúrrelas y deja que se enfríen para seguir con la receta de mayonesa de zanahoria vegana. Truco: También puedes cocinar las zanahorias al vapor.",
+              "imagen": "./img/sarten.png"
+            },
+            {
+              "numero": 2,
+              "descripcion": "Una vez frías, tritura las zanahorias con el diente de ajo pelado, el jugo del limón y la sal. Después, añade aceite en forma de hilo sin dejar de batir hasta alcanzar la textura de una mayonesa. Con unas tres o cuatro cucharadas soperas será suficiente, pero también depende del gusto de cada uno.",
+              "imagen":"./img/licuadora.png"
+            },
+            {
+              "numero": 3,
+              "descripcion": "¡Y listo! Sirve la preparación con crudités, con carne vegetal, con verduras al horno, patatas..., ¡lo que quieras! Ahora que sabes cómo hacer mayonesa de zanahoria vegana, atrévete a prepararla y dinos qué te ha parecido el resultado.",
+              "imagen": "./img/mayoZanahoriaImg.png"
+            }
+          ]
+      },
+      {
+        "nombre":"Receta de Mayonesa de Zanahoria 🥕",
+        "imagen":"./img/mayoZanahoriaImg.png",
+        "ingredientes":[
+            "½ kilogramo de zanahorias",
+            "½ limón (el jugo)",
+            "1 diente de ajo picado",
+            "Aceite de oliva o girasol",
+            "1 pizca de sal"
+        ],
+        "pasos": [
+            {
+              "numero": 1,
+              "descripcion": "Pela las zanahorias, trocéalas y cocínalas en una olla con agua hirviendo. Cuando estén tiernas, escúrrelas y deja que se enfríen para seguir con la receta de mayonesa de zanahoria vegana. Truco: También puedes cocinar las zanahorias al vapor.",
+              "imagen": "./img/sarten.png"
+            },
+            {
+              "numero": 2,
+              "descripcion": "Una vez frías, tritura las zanahorias con el diente de ajo pelado, el jugo del limón y la sal. Después, añade aceite en forma de hilo sin dejar de batir hasta alcanzar la textura de una mayonesa. Con unas tres o cuatro cucharadas soperas será suficiente, pero también depende del gusto de cada uno.",
+              "imagen":"./img/licuadora.png"
+            },
+            {
+              "numero": 3,
+              "descripcion": "¡Y listo! Sirve la preparación con crudités, con carne vegetal, con verduras al horno, patatas..., ¡lo que quieras! Ahora que sabes cómo hacer mayonesa de zanahoria vegana, atrévete a prepararla y dinos qué te ha parecido el resultado.",
+              "imagen": "./img/mayoZanahoriaImg.png"
+            }
+          ]
       }
     ]
   }
