@@ -21,14 +21,33 @@ function mostrarRecetas(recetas) {
   // Limpiar el contenedor de recetas y paginación
   recetasContainer.innerHTML = '';
   paginationContainer.innerHTML = '';
-
+let i=0
+let color= "#ff8c70";
   // Crear un enlace para cada receta en la página actual
   recetasPagina.forEach(function (receta) {
+    if(i===0){
+      color= "#ff8c70";
+    }
+    if(i===1){
+      color= "#f74639";
+    }
+    if(i===2){
+      color="#d56638";
+    }
+    if(i===3){
+      color="#003811";
+    }
+    i++;
+    if(i===4){
+      i=0;
+    }
     const enlaceReceta = document.createElement('a');
     enlaceReceta.classList.add('receta-link');
     enlaceReceta.href = 'receta.html?nombre=' + encodeURIComponent(receta.nombre);
-    enlaceReceta.innerHTML = '<div class="receta"><img src="' + receta.imagen + '"><h2>' + receta.nombre + '</h2></div>';
+    enlaceReceta.innerHTML = '<div class="receta"><img src="' + receta.imagen + '"><h2>' + receta.nombre + `</h2><button style="background-color:${color}">Saber mas</button></div>`;
     recetasContainer.appendChild(enlaceReceta);
+    console.log(i);
+    console.log(recetasContainer)
   });
 
   // Crear enlaces de paginación
