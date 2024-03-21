@@ -25,28 +25,48 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
     padding: 0 20px;
     gap:20px;
 }
-
-#nav-redes-sociales a{
-    color:#2a2b2a ;
+#nav-redes-sociales img{
+    width: 25px;
 }
-#nav-redes-sociales a:hover{
-    color:#2a2b2a80 ;
+#nav-redes-sociales img:hover{
+    opacity: 0.7;
 }
 #nav-bar{
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    align-items: flex-end;
+    gap: 70px;
 }
 #nav-bar a{
     text-decoration: none;
+    position: relative;
     color: #2a2b2a;
     font-weight: bold;
     font-size: 20px;
+}
+#nav-bar a::after {
+    content: ''; /* Añade un pseudo-elemento para el subrayado */
+    position: absolute;
+    left: 0; /* Inicia el subrayado desde la izquierda */
+    bottom: -2px; /* Coloca el subrayado justo debajo del texto */
+    width: 0; /* Inicia con ancho 0 */
+    height: 2px; /* Altura del subrayado */
+    background-color: #2a2b2a80; /* Color del subrayado */
+    transition: width 0.3s ease-in-out; /* Transición para animar el ancho */
+}
+
+#nav-bar a:hover::after {
+    width: 100%; /* Ancho completo para mostrar todo el subrayado */
+}
+#nav-bar a:hover{
+    color: #2a2b2a80;
+}
+#logo{
+    width: 200px;
 }
 .header hr{
     width: 98%;
