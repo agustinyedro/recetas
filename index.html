@@ -25,10 +25,20 @@
         <a href="pages/aboutme.html">Sobre mi</a>
         <a href="pages/contacto.html">Contacto</a>
       </nav>
-      <div id="burger-nav">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div id="burger-nav" class="hidden">
+        <img id="logo" src="./img/Logo.svg" alt="Logo">
+        <div id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="nav-bar-burger" class="hidden">
+          <a href="index.html">Home</a>
+          <a href="pages/recetas.html">Recetas</a>
+          <a href="pages/aboutme.html">Sobre mi</a>
+          <a href="pages/contacto.html">Contacto</a>
+        </nav>
       </div>
       <hr>
     </header>
@@ -38,6 +48,7 @@
     <footer id="footer">
       <p>Derechos reservados Agustin Yedro 2024®</p>
     </footer>
+    <script src="./js/navBar.js"></script>
     <script src="recetas.json"></script>
     <script src="script.js"></script>
   </body>
