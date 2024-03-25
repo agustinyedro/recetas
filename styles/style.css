@@ -196,11 +196,168 @@ p{
     opacity: 0.9;
 }
 
-#footer{
-    background-color: var(--black-olive); 
-    color: var(--primary-color); 
-    padding:  0 20%; 
+.footer{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /*dark:bg-gray-900*/
+    margin: 1rem;
 }
+.footer-content{
+    width: 100%; 
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+.footer-logo{
+    display: flex;
+    align-items:center; 
+    margin-bottom: 1rem; 
+  
+}
+.footer-logo-tamaño{
+    height: 2rem;
+}
+.footer-logo-text{
+    align-self: center;
+    font-size: 1.5rem; /* Equivalente a text-2xl en Tailwind CSS */
+    font-weight: 600; /* Equivalente a font-semibold en Tailwind CSS */
+    white-space: nowrap; /* Equivalente a whitespace-nowrap en Tailwind CSS */
+    color: #000; /* Color del texto predeterminado */
+    /*dark:text-white*/
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.5rem; /* Ajusta este valor según sea necesario */
+    font-size: 0.875rem; /* Equivalente a text-sm en Tailwind CSS */
+    font-weight: 500; /* Equivalente a font-medium en Tailwind CSS */
+    color: #6b7280; /* Equivalente a text-gray-500 en Tailwind CSS */
+}
+
+/* Estilos para cada elemento de la lista */
+.footer li {
+    margin-right: 1rem; /* Espacio entre elementos */
+}
+
+/* Estilos para los enlaces */
+.footer a {
+    text-decoration: none;
+    transition: text-decoration 0.2s ease-in-out;
+    color: inherit; /* Hereda el color del padre */
+}
+
+/* Estilos al pasar el ratón sobre los enlaces */
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.hr-styles {
+    margin-top: 1.5rem; /* Margen superior de 1.5 rem */
+    margin-bottom: 1.5rem; /* Margen inferior de 1.5 rem */
+    border-color: #edf2f7; /* Color del borde gris */
+}
+.text-copyright {
+    font-size: 0.875rem; /* Equivalente a text-sm en Tailwind CSS */
+    color: #6b7280; /* Equivalente a text-gray-500 en Tailwind CSS */
+    text-align: left; /* Por defecto, el texto se alinea a la izquierda */
+}
+.text-copyright a{
+    text-decoration: none;
+    transition: text-decoration 0.2s ease-in-out;
+}
+.text-copyright a:hover{
+    text-decoration: underline;
+}
+.footer-redes-sociales{
+    display: flex;
+    margin-top: 1rem; /* Ajusta este valor según sea necesario */
+}
+.item-primero{
+    color: #6b7280; 
+    transition: color 0.2s ease-in-out; /
+}
+.item{
+    color: #6b7280; 
+    transition: color 0.2s ease-in-out; 
+    margin-left: 1.25rem;
+} 
+.item-primero:hover, .item:hover {
+    color: #111827; /* Equivalente a text-gray-900 en Tailwind CSS */
+}
+.svg-tamanio{
+    width: 1rem;
+    height: 1rem;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+/* Estilos específicos para dispositivos con una resolución igual o mayor a "mediana" */
+/* sm */
+@media screen and (min-width: 640px) {
+    /* Estilos que deseas aplicar para dispositivos con una resolución igual o mayor a "pequeña" */
+    /* Por ejemplo: */
+    /* sm:flex sm:items-center sm:justify-between */
+    .footer-content-sm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-logo{
+        margin-bottom: 0;
+    }
+    .hr-styles {
+        margin-left: auto; /* Margen izquierdo automático */
+        margin-right: auto; /* Margen derecho automático */
+    }
+    .text-copyright {
+        text-align: center; /* Equivalente a sm:text-center en Tailwind CSS */
+    }
+    .footer-redes-sociales{
+        justify-content: center; 
+        margin-top: 0; 
+}
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+    /*md:py-8
+   *
+   *padding-top: 2rem;  Cambia este valor según sea necesario 
+   *padding-bottom: 2rem;  Cambia este valor según sea necesario 
+   */
+   .footer li {
+    margin-right: 1.5rem; /* Ajusta el espacio entre elementos */
+    }
+   .footer-content {
+       padding-top: 2rem;   
+       padding-bottom: 2rem;  
+   }
+}
+
+@media screen and (min-width: 1024px) {
+    .lg\:hr-styles {
+        margin-top: 2rem; /* Margen superior de 2 rem */
+        margin-bottom: 2rem; /* Margen inferior de 2 rem */
+        border-color: #4a5568; /* Color del borde gris oscuro */
+    }
+}
+
+
+
 
 
 /**
