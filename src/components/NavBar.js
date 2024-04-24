@@ -8,35 +8,35 @@ class NavBar extends HTMLElement {
     this.attachShadow({ mode: "open" });
   }
 
-  style = /* css */ `
-
-    hr {
-    width: 98%;
-    text-align: center;
-    margin: 20px auto; 
-    }
-    @media only screen and (max-width: 767px) {
-        
-        .header hr{
-            margin: 0 auto 15px auto;
+  style = /* HTML */ `
+    <style>
+      hr {
+        width: 98%;
+        text-align: center;
+        margin: 20px auto;
+      }
+      @media only screen and (max-width: 767px) {
+        .header hr {
+          margin: 0 auto 15px auto;
         }
-        }
-
+      }
+    </style>
   `;
   connectedCallback() {
-    this.shadowRoot.innerHTML = /* html */ `
-          <style>
-            ${this.style}
-          </style>
-          
-              <nav-redes-sociales></nav-redes-sociales>
-            
-              <nav-desktop></nav-desktop>
-        
-              <nav-celular></nav-celular>
-              
-            <hr>
-              `;
+    this.render();
+  }
+
+  render() {
+    this.shadowRoot.innerHTML = /* HTML */ `
+      ${this.style}
+      <nav-redes-sociales></nav-redes-sociales>
+
+      <nav-desktop></nav-desktop>
+
+      <nav-celular></nav-celular>
+
+      <hr />
+    `;
   }
 }
 

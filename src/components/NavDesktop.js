@@ -1,9 +1,10 @@
 class NavDesktop extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: "open" });
-    }
-    styles = /*css*/`
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
+  styles = /*HTML*/ `
+  <style>
     #nav{
         padding-top: 10px;
         display: flex;
@@ -54,22 +55,23 @@ class NavDesktop extends HTMLElement {
             display: none;
         }
     }
+    </style>
     `;
 
-    connectedCallback() {
-        this.shadowRoot.innerHTML = /*html*/`
-        <style>
+  connectedCallback() {
+    this.shadowRoot.innerHTML = /*HTML*/ `
+        
         ${this.styles}
-        </style>
+        
         <nav id="nav">
             <a href="index.html">Inicio</a>
             <a href="pages/recetas.html">Recetas</a>
-            <img id="logo" src="../../public/img/Logo.svg" alt="Logo">
+            <img id="logo" src="../src/assets/svg/Logo.svg" alt="Logo">
             <a href="pages/aboutme.html">Sobre mi</a>
             <a href="pages/contacto.html">Contacto</a>
         </nav>
-        `; 
-    }
+        `;
+  }
 }
 
-customElements.define("nav-desktop", NavDesktop)
+customElements.define("nav-desktop", NavDesktop);
