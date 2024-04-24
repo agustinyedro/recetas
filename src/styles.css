@@ -1,0 +1,18 @@
+:root{
+    --primary-color: #9DB5B2;
+    --light-cyan: #DAF0EE;
+    --black-olive: #3B413C;
+    --tifany-blue: #94D1BE;
+    --rosa:#ffded6
+}
+
+/*font-family: 'ThunderMed';*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    font-family: "Bricolage Grotesque", sans-serif;
+}

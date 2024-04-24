@@ -1,3 +1,4 @@
 {
-    "graalvm.home": ""
+    "graalvm.home": "",
+    "java.configuration.runtimes": []
 }
