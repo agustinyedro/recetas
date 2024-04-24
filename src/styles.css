@@ -1,18 +1,23 @@
-:root{
+/*Font Primaria*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
     --primary-color: #9DB5B2;
     --light-cyan: #DAF0EE;
     --black-olive: #3B413C;
     --tifany-blue: #94D1BE;
-    --rosa:#ffded6
+    --rosa: #ffded6;
+    --primary-font: "Bricolage Grotesque", sans-serif;
 }
 
 /*font-family: 'ThunderMed';*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #fff;
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: var(--primary-font)
 }

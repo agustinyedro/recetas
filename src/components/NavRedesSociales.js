@@ -27,6 +27,16 @@ class NavRedesSociales extends HTMLElement {
           display: none;
         }
       }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        #nav-redes-sociales {
+          display: none;
+        }
+      }
+      @media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
+        #nav-redes-sociales {
+          display: none;
+        }
+      }
     </style>
   `;
 

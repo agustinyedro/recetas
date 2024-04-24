@@ -29,8 +29,8 @@ class FooterComponent extends HTMLElement {
             margin-bottom: 1rem;
             padding: 0.5rem 1rem;
 
-            .footer-logo-tamaño {
-              height: 25vh;
+            .footer-logo-tamanio {
+              height: 3rem;
             }
           }
 
@@ -69,94 +69,108 @@ class FooterComponent extends HTMLElement {
 
       .text-copyright {
         display: inline-block;
-        font-size: 0.875rem; /* Equivalente a text-sm en Tailwind CSS */
-        color: #6b7280; /* Equivalente a text-gray-500 en Tailwind CSS */
-        text-align: center; /* Por defecto, el texto se alinea a la izquierda */
+        font-size: 0.875rem;
+
+        text-align: center;
         margin: 0 0.875rem;
 
         a {
           text-decoration: none;
           transition: text-decoration 0.2s ease-in-out;
+          color: #6b7280;
 
           &:hover {
             text-decoration: underline;
           }
         }
       }
+      .footer-content-sm {
+        &.bottom {
+          display: flex;
+          flex-direction: column;
+          .footer-redes-sociales {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 1rem 0;
+            margin: 1rem 0; /* Ajusta este valor según sea necesario */
 
-      .footer-redes-sociales {
-        display: flex;
-        margin-top: 1rem; /* Ajusta este valor según sea necesario */
+            .item {
+              color: #6b7280;
+              transition: color 0.2s ease-in-out;
+              margin: 0 auto;
+              .svg-tamanio {
+                width: 1rem;
+                height: 1rem;
+              }
+              &:hover {
+                color: #111827;
+              }
+            }
 
-        .item-primero {
-          color: #6b7280;
-          transition: color 0.2s ease-in-out;
-          / .svg-tamanio {
-            width: 1rem;
-            height: 1rem;
+            .item .sr-only {
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              margin: -1px;
+              overflow: hidden;
+              clip: rect(0, 0, 0, 0);
+              white-space: nowrap;
+              border-width: 0;
+            }
           }
-        }
-
-        .item {
-          color: #6b7280;
-          transition: color 0.2s ease-in-out;
-          margin-left: 1.25rem;
-
-          .svg-tamanio {
-            width: 1rem;
-            height: 1rem;
-          }
-        }
-
-        .item-primero:hover,
-        .item:hover {
-          color: #111827; /* Equivalente a    text-gray-900 en Tailwind CSS */
-        }
-
-        .sr-only {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          white-space: nowrap;
-          border-width: 0;
         }
       }
+
       /* Estilos específicos para dispositivos con una resolución igual o mayor a "mediana" */
       /* sm */
       @media screen and (min-width: 768px) {
         /* Estilos que deseas aplicar para dispositivos con una resolución igual o mayor a "pequeña" */
         /* Por ejemplo: */
         /* sm:flex sm:items-center sm:justify-between */
+        .footer {
+          .footer-content {
+            .footer-logo {
+              display: flex;
+              align-items: center;
+              margin-bottom: 1rem;
+              padding: 0.5rem 1rem;
+
+              .footer-logo-tamanio {
+                height: 5rem;
+              }
+            }
+          }
+        }
 
         .footer-content-sm {
+          width: 95%;
+          margin: 0 auto;
           display: flex;
           align-items: center;
           justify-content: space-between;
 
           &.bottom {
-            padding: 0.5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .footer-redes-sociales {
+              justify-content: center;
+              gap: 1.2rem;
+            }
           }
           ul {
             gap: 1rem;
-          }
-
-          .text-copyright {
-            text-align: center; /* Equivalente a sm:text-center en Tailwind CSS */
-          }
-          .footer-redes-sociales {
-            justify-content: center;
-            margin-top: 0;
           }
         }
 
         .hr-styles {
           margin-left: auto; /* Margen izquierdo automático */
           margin-right: auto; /* Margen derecho automático */
-          width: 100%;
+          width: 95%;
         }
       }
     </style>
@@ -171,7 +185,7 @@ class FooterComponent extends HTMLElement {
             <a href="../index.html" class="footer-logo">
               <img
                 src="../src/assets/svg/Logo.svg"
-                class="footer-logo-tamaño"
+                class="footer-logo-tamanio"
                 alt="Logo"
               />
             </a>
@@ -200,17 +214,15 @@ class FooterComponent extends HTMLElement {
               . Todos los derechos reservados.
             </span>
             <div class="footer-redes-sociales">
-              <a href="#" class="item-primero">
+              <a href="#" class="item">
                 <svg
                   class="svg-tamanio"
                   aria-hidden="true"
                   fill="currentColor"
-                  viewBox="0 0 8 19"
+                  viewBox="0 0 512 512"
                 >
                   <path
-                    fill-rule="evenodd"
-                    d="M6.135 3H8V0H6.135a4.147 4.          147 0 0 0-4.142 4.142V6H0v3h2v9.        938h3V9h2.021l.592-3H5V3.591A.6.          6 0 0 1 5.592 3h.543Z"
-                    clip-rule="evenodd"
+                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
                   />
                 </svg>
                 <span class="sr-only">Facebook page</span>

@@ -21,18 +21,18 @@ class NavDesktop extends HTMLElement {
         }
     
         a::after {
-            content: ''; 
+            content: '';
             position: absolute;
-            left: 0; 
-            bottom: -2px; 
-            width: 0; 
-            height: 2px; 
-            background-color: #2a2b2a80; 
-            transition: width 0.3s ease-in-out; 
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: #2a2b2a80;
+            transition: width 0.3s ease-in-out;
         }
     
         a:hover::after {
-            width: 100%; 
+            width: 100%;
         }
     
         a:hover{
@@ -51,6 +51,16 @@ class NavDesktop extends HTMLElement {
     }
 
     @media only screen and (max-width: 767px) {
+        #nav{
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        #nav{
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
         #nav{
             display: none;
         }
