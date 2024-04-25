@@ -1,13 +1,24 @@
 /*Font Primaria*/
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Gothic+A1&display=swap');
 
 :root {
-    --primary-color: #9DB5B2;
-    --light-cyan: #DAF0EE;
+    --primary-color: #1c1917;
+    --bg-color: #fffcf5;
+    --bg-color2: #efe3de;
+    --bg-dark: #353535;
     --black-olive: #3B413C;
-    --tifany-blue: #94D1BE;
-    --rosa: #ffded6;
+    --green-oscuro: #142828;
+    --rosa: #ffe1e6;
+
+
+    --color1: #ff8c70;
+    --color2: #f74639;
+    --color3: #d56638;
+    --color4: #003811;
+
     --primary-font: "Bricolage Grotesque", sans-serif;
+    --secondary-font: "Gothic A1", sans-serif;
 }
 
 /*font-family: 'ThunderMed';*/
@@ -18,6 +29,6 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: var(--bg-color);
     font-family: var(--primary-font)
 }

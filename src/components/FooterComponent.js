@@ -11,7 +11,7 @@ class FooterComponent extends HTMLElement {
   styles = /* HTML */ `
     <style>
       .footer {
-        background-color: white;
+        background-color: var(--bg-color);
         border-radius: 0.5rem;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
           0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -39,10 +39,10 @@ class FooterComponent extends HTMLElement {
             flex-wrap: nowrap;
             align-items: center;
             justify-content: space-evenly;
-            margin-bottom: 1.5rem; /* Ajusta este valor según sea necesario */
-            font-size: 0.875rem; /* Equivalente a text-sm en Tailwind CSS */
-            font-weight: 500; /* Equivalente a font-medium en Tailwind CSS */
-            color: #6b7280; /* Equivalente a text-gray-500 en Tailwind CSS */
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #6b7280;
             list-style-type: none;
             padding: 0;
 
@@ -50,7 +50,7 @@ class FooterComponent extends HTMLElement {
               a {
                 text-decoration: none;
                 transition: text-decoration 0.2s ease-in-out;
-                color: inherit; /* Hereda el color del padre */
+                color: inherit;
 
                 &:hover {
                   text-decoration: underline;

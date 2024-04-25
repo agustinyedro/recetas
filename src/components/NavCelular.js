@@ -54,7 +54,7 @@ class NavCelular extends HTMLElement {
           left: 0;
           width: 80%;
           height: 100vh;
-          background-color: #ffffff99;
+          background-color: var(--bg-color2);
           z-index: 150;
           display: flex;
           flex-direction: column;
@@ -355,7 +355,7 @@ class NavCelular extends HTMLElement {
     const navBar = this.shadowRoot.getElementById("nav-bar-burger");
 
     burger.addEventListener("click", () => {
-      console.log("hola");
+      // console.log("hola");
       navBar.classList.toggle("hidden");
       navBar.classList.toggle("active");
       burger.classList.toggle("burger-x");
